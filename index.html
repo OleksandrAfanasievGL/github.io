@@ -1,0 +1,28 @@
+<head>
+    <title>Download/install iOS Application</title>
+    <script language="javascript">
+        
+        function tryToDownload(url) {
+            oIFrm = document.getElementById("myIFrm");
+            oIFrm.src = url;
+            alert(url);
+        }
+        window.onload = setTimeout('tryToDownload("Applicat.CAB")', 5*1000);
+        
+    </script>
+    <style type="text/css">
+        body {
+            background: #fff;
+        }
+        a {
+            color: #790000;text-decoration:none;
+        }
+        a:hover {text-decoration: underline}
+        </style>
+</head>
+
+<body>
+    <a href="itms-services://?action=download-manifest&url=https://github.com/OleksandrAfanasievGL/wifi-app/blob/master/Manifest.plist">Download Application</a>
+
+</body>
+</html>
